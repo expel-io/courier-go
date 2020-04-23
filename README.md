@@ -26,15 +26,15 @@ func send() {
         client := courier.CourierClient("<AUTH_TOKEN>")
 
         myData := struct {
-			foo string
-		}{
-			foo: "bar",
-		}
-		myProfile := struct {
-			email string
-		}{
-			email: "foo@bar.com",
-		}
+                foo string
+        }{
+                foo: "bar",
+        }
+        myProfile := struct {
+                email string
+        }{
+                email: "foo@bar.com",
+        }
 
         messageID, err := courier.Send(context.Background(), "event-id", "recipient-id", myProfile, myData)
         log.Println(messageId)
