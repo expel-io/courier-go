@@ -31,7 +31,7 @@ func TestClient_GetMessage(t *testing.T) {
 
 	t.Run("makes requests for message ID", func(t *testing.T) {
 		client := courier.CourierClient("key", server.URL)
-		rsp ,err := client.GetMessage(context.Background(), requestMessageID)
+		rsp, err := client.GetMessage(context.Background(), requestMessageID)
 		assert.Nil(t, err)
 		assert.Equal(t, requestMessageID, rsp.Id)
 	})
