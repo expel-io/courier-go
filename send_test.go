@@ -8,7 +8,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/expel-io/courier-go"
+	"github.com/trycourier/courier-go"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/expel-io/courier-go"
 	"github.com/stretchr/testify/assert"
+	"github.com/trycourier/courier-go"
 )
 
 func TestClient_GetMessage(t *testing.T) {
